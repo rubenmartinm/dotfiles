@@ -1,4 +1,6 @@
-[user]
+[color]
+	ui = true
+	[user]
 	email = rubenmartinm@null.computer
 	name = rubenmartinm
 [core]
