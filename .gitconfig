@@ -1,8 +1,8 @@
+[user]
+	name = rubenmartinm
+	email = rubenmartinm@null.computer
 [color]
 	ui = true
-[user]
-	email = rubenmartinm@null.computer
-	name = rubenmartinm
 [core]
 	editor = vim
 [init]
