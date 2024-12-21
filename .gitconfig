@@ -1,0 +1,7 @@
+[user]
+	email = rubenmartinm@null.computer
+	name = rubenmartinm
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
