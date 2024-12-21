@@ -1,6 +1,6 @@
 #! /bin/bash
 
-DOTFILES=(.gitconfig .gitignore .zshrc)
+DOTFILES=(.gitconfig .zshrc .p10k.zsh)
 
 for dotfile in $(echo ${DOTFILES[*]});
 do
