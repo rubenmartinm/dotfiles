@@ -77,7 +77,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker aws gcloud kubectl kubectx kube-ps1)
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-completions
+    fast-syntax-highlighting
+
+    kubectl
+    docker
+    aws
+    gcloud
+    kubectx
+    kube-ps1
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,7 +130,8 @@ alias g="git"
 alias gc="git clone"
 alias gs="git status"
 alias gco="git checkout"
-alias k=kubecolor
+
+export PATH=$PATH:$HOME/.docker/cli-plugins:$HOME/.local/bin:$HOME/.bin
 
 # To use gcloud storage
 export CLOUDSDK_PYTHON=/usr/bin/python
@@ -131,7 +144,7 @@ eval "$(atuin init zsh)"
 export PATH=$PATH:$HOME/bin
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '/home/hakiki/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/hakiki/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
