@@ -136,6 +136,9 @@ export PATH=$PATH:$HOME/.docker/cli-plugins:$HOME/.local/bin:$HOME/.bin
 # To use gcloud storage
 export CLOUDSDK_PYTHON=/usr/bin/python
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 if [[ ! -f ~/no-atuin ]]; then
   eval "$(atuin init zsh)"
 fi
